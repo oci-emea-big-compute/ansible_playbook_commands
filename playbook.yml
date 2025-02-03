@@ -1,0 +1,7 @@
+---
+- name: Run Commands Across Inventory
+  hosts: servers
+  become: yes
+  roles:
+    - execute_commands
+

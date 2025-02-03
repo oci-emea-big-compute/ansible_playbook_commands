@@ -1,0 +1,15 @@
+---
+- name: Starting Task
+  debug:
+    msg: "Staring Execution on {{ inventory_hostname }}"      
+
+- name: Execute multiple commands on remote servers
+  shell: "{{ item }}"
+  loop: "{{ command_list }}"
+  register: command_output
+  ignore_errors: yes
+
+- name: Print command output
+  debug:
+    var: command_output.stdout_lines
+

@@ -1,0 +1,6 @@
+---
+- name: Log execution results
+  copy:
+    content: "{{ command_output.stdout_lines }}"
+    dest: /mnt/llmdata/automation/ansible-commands-role/log/ansible_command_output.log
+

@@ -1,0 +1,8 @@
+---
+- name: Test Ansible SSH Access
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Check uptime
+      command: uptime
+

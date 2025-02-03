@@ -1,0 +1,13 @@
+---
+command_list:
+  - "echo 'Hello from Ansible'"
+  - "uptime"
+  - "df -lh"
+  - "uname -a"
+  - "mkdir -p /mnt/llmdata"
+  - "bash /usr/libexec/oci-growfs -y"
+  - "df -lh"
+  - "sudo yum install -y nfs-utils"  
+  - "sudo mount 10.0.10.34:/llmdata /mnt/llmdata"
+
+
